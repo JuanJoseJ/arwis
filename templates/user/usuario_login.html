@@ -1,0 +1,9 @@
+{% extends "extensions/form.html" %}
+{% load static %}
+{% block titulo %}
+    log in
+{% endblock titulo %}
+{% block formulario %}
+    {{form.as_p}}
+    <input type="submit" value="Log in">
+{% endblock formulario %}

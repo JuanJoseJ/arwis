@@ -1,0 +1,10 @@
+{% extends "extensions/base.html" %} {% load static %} {% block body %}
+<div class="container">
+  <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% block formulario %}
+        <!-- Aquí se pone el '{{form.as_p}}' de los distintos formularios -->
+      {% endblock formulario %}
+  </form>
+</div>
+{% endblock body %}
